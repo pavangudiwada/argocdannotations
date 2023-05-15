@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-deployment2
   labels:
-    app: nginx
+    app: nginx2
   annotations:
     link.argocd.argoproj.io/external-link: "https://platform.robusta.dev/?namespace=%22default%22&type=%22Deployment%22&name=%22some-deployment%22&cluster=%22robustaUI
 %22"
@@ -11,14 +11,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: nginx2
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx2
     spec:
       containers:
-      - name: nginx
+      - name: nginx2
         image: nginx:1.14.2
         ports:
         - containerPort: 80
