@@ -5,8 +5,7 @@ metadata:
   labels:
     app: nginx2
   annotations:
-    link.argocd.argoproj.io/external-link: "https://platform.robusta.dev/?namespace=%22default%22&type=%22Deployment%22&name=%22nginx-deployment2%22&cluster=%22robustaUI
-%22"
+    link.argocd.argoproj.io/external-link: "https://platform.robusta.dev/?namespace=%22default%22&type=%22Deployment%22&name=%22nginx-deployment2%22&cluster=%22robustaUI%22"
 spec:
   replicas: 3
   selector:
