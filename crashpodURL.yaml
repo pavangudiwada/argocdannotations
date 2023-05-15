@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: crashpod
   annotations:
-    link.argocd.argoproj.io/external-link: "https://platform.robusta.dev/?namespace=%22default%22&type=%22Deployment%22&name=%22crashpod%22&cluster=%22robustaUI
+    link.argocd.argoproj.io/external-link: "https://platform.robusta.dev/?namespace=%22default%22&type=%22Deployment%22&name=%22crashpod%22&cluster=%22robustaUI"
 spec:
   replicas: 1
   selector:
